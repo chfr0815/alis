@@ -57,7 +57,7 @@ For new features, improvements and bugs fill an issue in GitHub or make a pull r
 * **System**: UEFI, BIOS
 * **Storage**: SATA, NVMe and MMC
 * **Encryption**: root partition encrypted and no encrypted
-* **Partition**: no LVM, LVM, LVM on LUKS, GPT on UEFI, MBR on BIOS
+* **Partition**: no LVM, LVM, LVM on LUKS, GPT on UEFI, MBR on BIOS, custom partition scheme and mountpoints
 * **File system**: ext4, btrfs (with subvols), xfs, f2fs, reiserfs
 * **Kernels**: linux, linux-lts, linux-hardened, linux-zen
 * **Desktop environment**: GNOME, KDE, XFCE, Mate, Cinnamon, LXDE, i3-wm, i3-gaps, Deepin, Budgie, Bspwm, Awesome, Qtile, Openbox, Leftwm, Dusk
@@ -116,6 +116,7 @@ Advanced usage
 # iwctl --passphrase "[WIFI_KEY]" station [WIFI_INTERFACE] connect "[WIFI_ESSID]"          # (Optional) Connect to WIFI network. _ip link show_ to know WIFI_INTERFACE.
 # curl -sL https://raw.githubusercontent.com/picodotdev/alis/master/download.sh | bash     # Download alis scripts
 # # curl -sL https://git.io/JeaH6 | bash                                                   # Alternative download URL with URL shortener
+# # curl -sL https://raw.githubusercontent.com/picodotdev/alis/master/download.sh | bash -s -- -h [HASH_COMMIT] # Use specific version of the script based on the commit hash
 # ./alis-asciinema.sh     # (Optional) Start asciinema video recording
 # vim alis.conf           # Edit configuration and change variables values with your preferences (system configuration)
 # vim alis-packages.conf  # (Optional) Edit configuration and change variables values with your preferences (packages to install)
